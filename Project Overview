@@ -1,0 +1,46 @@
+# ecommerce-sql-analysis
+End-to-end SQL analysis of a Brazilian ecommerce platform covering 99,441 orders across 25 months (Sept 2016 – Oct 2018). Built using PostgreSQL on Supabase, queries written in DBeaver.
+
+## Dataset
+7 interconnected tables: Customers, Orders, Order Items, 
+Products, Sellers, Payments, Reviews.
+
+| Table       | Rows    |
+|-------------|---------|
+| customers   | 99,441  |
+| orders      | 99,441  |
+| order_items | 112,650 |
+| payments    | 103,886 |
+| products    | 32,951  |
+| sellers     | 3,095   |
+| reviews     | 3,038   |
+
+## Key Findings (Scroll through to view the SQL File with codes and interesting findings)
+
+**Revenue & Geography**
+- São Paulo generates R$5.77M — more than the next 4 states combined
+- Top 3 states (SP, RJ, MG) account for the majority of platform revenue
+
+**Growth Trend**
+- Platform revenue grew ~20x in under 2 years (R$46K → R$1M+/month)
+- November 2017 spike (+53.6% MoM) driven by Black Friday demand
+
+**Delivery & Satisfaction**
+- 78.93% of orders arrive 7+ days before the estimated date
+- Late orders score avg 2.03/5 vs 4.31/5 for very early deliveries
+- Delivery speed is the single biggest driver of customer satisfaction
+
+**Sellers**
+- 16 of top 20 sellers are based in São Paulo
+- Two winning seller strategies: high volume (1,772 orders) vs 
+  high ticket size (R$544 avg item price)
+
+**Payments**
+- Credit card dominates at 74% of transactions, avg 3.5 installments
+- Boleto is a strong second — serves customers without credit access
+
+## Tools Used
+- PostgreSQL (Supabase)
+- DBeaver
+- Git / GitHub
+
